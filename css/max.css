@@ -1,0 +1,72 @@
+/* XL  */
+@media (max-width:1399px) {
+    
+}
+/* LG  */
+@media (max-width:1199px) {
+    aside{
+        transform: translateX(-100%);
+    }
+    main{
+        width: 100%;
+        transform: translate(0,75px);
+    }
+    .sidebar-show{
+        transform: translateX(0) !important;
+    }
+    /* login form ______________________________________________________________________ */
+    .login-form,.register-formm,.recover-password-form{
+        width: 40%;
+    }
+}
+/* MD  */
+@media (max-width:991px) {
+    .w-md-1{
+        width: 100%;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .product-sale{
+        margin: 12px;
+    }
+    .report-chart{
+        margin-top: 12px;
+    }
+
+    /* calender------------------------------------- */
+    #calendar{
+        margin-top: 24px;
+    }
+
+     /* login form ______________________________________________________________________ */
+     .login-form,.register-form,.recover-password-form{
+        width: 60%;
+    }
+}
+/* SM  */
+@media (max-width:767px) {
+    .w-sm-1{
+        width: 100%;
+    }
+    aside{
+        top: 67px;
+    }
+    .navbar-icons{
+        display: none;
+    }
+    main{
+        transform: translate(0,67px);
+    }
+    .active{
+        transform: translate(0,67px);
+    }
+     /* login form ______________________________________________________________________ */
+     .login-form,.register-form,.recover-password-form{
+        width: 80%;
+    }
+}
+/* XS  */
+@media (max-width:575px) {
+    
+}

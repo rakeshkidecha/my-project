@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upcube</title>
+        <!-- remix icon -->
+        <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+        <!-- fonts  -->
+        <link rel="stylesheet" href="fonts/inter/stylesheet.css" type="text/css">
+        <!-- apex css  -->
+        <link rel="stylesheet" href="css/apexcharts.css" type="text/css">
+        <!-- fav  icon -->
+        <link rel="icon" href="images/favicon.ico" type="icon">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- responcive max -->
+        <link rel="stylesheet" href="css/max.css" type="text/css">
+    </head>
+    <body>
+        
+        <!-- header  -->
+        <header>
+            <div class="navbar-header d-flex align-center justify-between">
+                <div class="d-flex align-center">
+                    <div class="logo text-center">
+                        <a href="javascript:void(0)">
+                            <img src="images/logo.png" alt="logo" title="logo" width="100px">
+                        </a>
+                    </div>
+                    <i class="ri-menu-2-line"></i>
+                    <form class="d-flex align-center">
+                        <i class="ri-search-line"></i>
+                        <input type="text" placeholder="Search....">
+                    </form>
+                </div>
+                <div class="navbar-icons d-flex align-center">
+                    <div class="flag">
+                        <img src="images/us.jpg" alt="us-flag" title="us-flag" width="34px">
+                    </div>
+                    <a href="javascript:void(0)"><i class="ri-apps-2-line"></i></a>
+                    <a href="javascript:void(0)"><i class="ri-fullscreen-line"></i></a>
+                    <a href="javascript:void(0)"><i class="ri-notification-2-line"></i></a>
+                    <div class="profile d-flex align-center position-relative">
+                        <img src="images/avatar.jpg" alt="profile" title="profile" width="34px">
+                        <span>Juliya<i class="ri-arrow-down-s-line"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)"><i class="ri-user-line"></i> Profile</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-wallet-2-line"></i>My Wallet</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-settings-3-line"></i>Setting </a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-lock-line"></i>Lock screen</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-shut-down-line"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)"><i class="ri-settings-2-line"></i></a>
+                </div>
+            </div>
+        </header>
+        <!-- sidebar  -->
+        <aside>
+            <div class="sidebar">
+                <div class="profile-status text-center">
+                    <img src="images/avatar.jpg" alt="profile" title="profile" width="80px">
+                    <h3>Julia Hudda</h3>
+                    <p><i class="ri-record-circle-line"></i> Online</p>
+                </div>
+                <div class="sidebar-navigation">
+                    <h5>MENU</h5>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="d-flex justify-between align-center active-menu">
+                                <div class="menu-title">
+                                    <i class="ri-dashboard-line"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                                <p>03</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calender.html" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-calendar-2-line"></i>
+                                    <span>Calendar</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-mail-send-line"></i>
+                                    <span>Email</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-layout-line"></i>
+                                    <span>Layouts</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5>PAGES</h5>
+                    <ul>
+                        <li class="sidebar-dropdown position-relative">
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-account-circle-line"></i>
+                                    <span>Authentication</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                            <ul class="sidebar-dropdown-menu">
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Resister</a></li>
+                                <li><a href="recover_password.html">Recover Password</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-profile-line"></i>
+                                    <span>Utility</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5>COMPONENTS</h5>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-pencil-ruler-2-line"></i>
+                                    <span>UI Elements</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-vip-crown-2-line"></i>
+                                    <span>Advanced UI</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-eraser-fill"></i>
+                                    <span>Forms</span>
+                                </div>
+                                <p>08</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-table-2"></i>
+                                    <span>Tables</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Charts</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-brush-line"></i>
+                                    <span>Icons</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-map-pin-line"></i>
+                                    <span>Maps</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                                <div class="menu-title">
+                                    <i class="ri-share-line"></i>
+                                    <span>Multi Level</span>
+                                </div>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!-- main sections -->
+        <main>
+            <div class="dashboard">
+                <div class="dashboard-title d-flex justify-between align-center">
+                    <h4>DASHBOARD</h4>
+                    <div>
+                        <a href="javascript:void(0)">Upcube</a>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+                <div class="main-dashboard">
+                    <div class="row">
+                        <div class="w-4 w-md-2 w-sm-1">
+                            <div class="product-sale">
+                                <div class="product-item d-flex justify-between align-center">
+                                    <div>
+                                        <p>Total Sales</p>
+                                        <h2>1452</h2>
+                                    </div>
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </div>
+                                <div class="product-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>9.23%</span>from previous period</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-md-2 w-sm-1">
+                            <div class="product-sale">
+                                <div class="product-item d-flex justify-between align-center">
+                                    <div>
+                                        <p>New Orders</p>
+                                        <h2>938</h2>
+                                    </div>
+                                    <i class="ri-money-dollar-circle-line"></i>
+                                </div>
+                                <div class="product-content">
+                                    <p><span><i class="ri-arrow-right-down-line"></i>1.09%</span>from previous period</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-md-2 w-sm-1">
+                            <div class="product-sale">
+                                <div class="product-item d-flex justify-between align-center">
+                                    <div>
+                                        <p>New Users</p>
+                                        <h2>8246</h2>
+                                    </div>
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="product-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>16.2%</span>from previous period</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-md-2 w-sm-1">
+                            <div class="product-sale">
+                                <div class="product-item d-flex justify-between align-center">
+                                    <div>
+                                        <p>Unique Visitors</p>
+                                        <h2>29670</h2>
+                                    </div>
+                                    <i class="ri-btc-line"></i>
+                                </div>
+                                <div class="product-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>11.7%</span>from previous period</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-2 w-md-1">
+                            <div class="report-chart">
+                                <div class="report-title d-flex justify-between align-center">
+                                    <h4>Email Sent</h4>
+                                    <p>Report<i class="ri-arrow-down-s-line"></i></p>
+                                </div>
+                                <div class="report-content d-flex justify-evenly">
+                                    <div class="text-center">
+                                        <h3>25,117 <span><i class="ri-arrow-up-s-fill"></i>2.2 %</span></h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>25,117 <span><i class="ri-arrow-up-s-fill"></i>2.2 %</span></h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>25,117 <span><i class="ri-arrow-up-s-fill"></i>2.2 %</span></h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                </div>
+                                <div id="report"></div>
+                            </div>
+                        </div>
+                        <div class="w-2 w-md-1">
+                            <div class="revenue-chart">
+                                <div class="revenue-title d-flex justify-between align-center">
+                                    <h4>Revenue</h4>
+                                    <p>This Year<i class="ri-arrow-down-s-line"></i></p>
+                                </div>
+                                <div class="revenue-content d-flex justify-evenly">
+                                    <div class="text-center">
+                                        <h3>17,493</h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>$44,960</h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>$29,142</h3>
+                                        <p>Marketplace</p>
+                                    </div>
+                                </div>
+                                <div id="revenue"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-65 w-md-1">
+                            <div class="user-data">
+                                <div class="user-title d-flex justify-between align-center">
+                                    <h4>Latest Transactions</h4>
+                                    <i class="ri-more-2-line"></i>
+                                </div>
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Status</th>
+                                            <th>Age</th>
+                                            <th>Start Date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Charles Casey</td>
+                                            <td>Web developer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Active</td>
+                                            <td>23</td>
+                                            <td>04 Apr, 2021</td>
+                                            <td>$42,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alex Adams</td>
+                                            <td>Python Developer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Deactive</td>
+                                            <td>28</td>
+                                            <td>01 Aug, 2021</td>
+                                            <td>$25,060</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prezy Kelsey</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Active</td>
+                                            <td>33</td>
+                                            <td>15 Jun, 2021</td>
+                                            <td>$59,350</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ruhi Fancher</td>
+                                            <td>React Developer </td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Active</td>
+                                            <td>25</td>
+                                            <td>01 March, 2021</td>
+                                            <td>$23,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Juliet Pineda</td>
+                                            <td>Senior Web Designer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Active</td>
+                                            <td>38</td>
+                                            <td>01 Jan, 2021</td>
+                                            <td>$69,185</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Den Simpson</td>
+                                            <td>Web Designer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Deactive</td>
+                                            <td>21</td>
+                                            <td>01 Sep, 2021</td>
+                                            <td>$37,845</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mahek Torres</td>
+                                            <td>Senior Laravel Developer</td>
+                                            <td><i class="ri-checkbox-blank-circle-fill"></i>Active</td>
+                                            <td>32</td>
+                                            <td>20 May, 2021</td>
+                                            <td>$55,100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="w-35 w-md-1">
+                            <div class="monthly-chart">
+                                <div class="monthly-title d-flex justify-between align-center">
+                                    <h4>Monthly Earnings</h4>
+                                    <form>
+                                        <select>
+                                            <option>Apr</option>
+                                            <option>Mar</option>
+                                            <option>Feb</option>
+                                            <option>Jan</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="monthly-content d-flex justify-evenly">
+                                    <div class="text-center">
+                                        <h3>3475</h3>
+                                        <p>Market Place</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>458</h3>
+                                        <p>Last Week</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>9062</h3>
+                                        <p>Last Month</p>
+                                    </div>
+                                </div>
+                                <div id="monthly"></div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="copy-right d-flex justify-between align-center">
+                <p>2024 © Upcube.</p>
+                <p>Crafted with <i class="ri-heart-fill"></i> by Themesdesign</p>
+            </div>
+        </main>
+
+
+
+
+        
+        <!-- main jquery cdn  -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <!-- apexchart -->
+        <script src="js/apexcharts.min.js" type="text/javascript"></script>
+        <script>
+            
+            // dropdown menu 
+            $(document).ready(function () {
+                $(".profile").click(function () {
+                    $(".dropdown-menu").slideToggle();
+                    event.stopPropagation();    
+                });
+                $('html').click(function(){
+                    // if($(".dropdown-menu").is(":visible"))
+                    // {
+                    //     $(".dropdown-menu").slideUp();
+                    // }
+                    // if($('aside').is(':visible'))
+                    // {
+                    //     $('aside').removeClass('sidebar-show');
+                    // }
+                    if (!$(event.target).closest('.dropdown-menu').length){
+                        if ($(".dropdown-menu").is(":visible")) {
+                            $(".dropdown-menu").slideUp();
+                        }
+                    }
+                    if (!$(event.target).closest('aside').length) {
+                        if ($('aside').is(":visible")) {
+                            $('aside').removeClass('sidebar-show');
+                        }
+                    }
+                });
+                $('.navbar-header .ri-menu-2-line').click(function(){
+                    $('main').toggleClass('active');
+                    $('aside').toggleClass('sidebar-hidden');
+                    $('aside').toggleClass('sidebar-show');
+                    event.stopPropagation();    
+                });  
+                $('.sidebar-dropdown').click(function(){
+                    $('.sidebar-dropdown-menu').slideToggle(500);
+                });
+                $('.sidebar-navigation ul li a').click(function(){
+                    $(this).addClass('active-menu')
+                    $(this).parents().siblings().find('a').removeClass('active-menu')
+                });
+            });
+
+            // report chart 
+            var options = {
+                series: [{
+                name: 'series1',
+                data: [31, 40, 28, 51, 42, 109, 100]
+                }, {
+                name: 'series2',
+                data: [11, 32, 45, 32, 34, 52, 41]
+                }],
+                chart: {
+                height: 350,
+                type: 'area'
+                },
+                dataLabels: {
+                enabled: false
+                },
+                stroke: {
+                curve: 'smooth'
+                },
+                xaxis: {
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                },
+                tooltip: {
+                    x: {
+                        format: 'dd/MM/yy HH:mm'
+                    },
+                },
+            };
+
+            var chart = new ApexCharts(document.querySelector("#report"), options);
+            chart.render();
+      
+            // revenue chart 
+            var options = {
+                series: [{
+                name: 'Website Blog',
+                type: 'column',
+                data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+                }, {
+                name: 'Social Media',
+                type: 'line',
+                data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+                }],
+                chart: {
+                height: 350,
+                type: 'line',
+                },
+                stroke: {
+                width: [0, 4]
+                },
+                title: {
+                text: ''
+                },
+                dataLabels: {
+                enabled: false,
+                enabledOnSeries: [1]
+                },
+                labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+                xaxis: {
+                type: 'datetime'
+                },
+                yaxis: [{
+                title: {
+                    text: '',
+                },
+                
+                }, {
+                opposite: true,
+                title: {
+                    text: ''
+                }
+                }]
+            };
+
+            var chart = new ApexCharts(document.querySelector("#revenue"), options);
+            chart.render();
+
+            // monthly chart 
+            var options = { 
+                series: [44, 55, 13, 33],
+                chart: {
+                width: 348,
+                type: 'donut',
+                },
+                dataLabels: {
+                enabled: false
+                },
+                labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                plotOptions: {
+                    pie: {
+                        donut: {
+                        size: '75%',
+                        }
+                    }
+                },
+                responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                    width: 200
+                    },
+                    legend: {
+                    show: false
+                    }
+                }
+                }],
+                legend: {
+                position: 'right',
+                offsetY: 0,
+                height: 230,
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#monthly"), options);
+            chart.render();
+            
+        </script>
+    </body>
+</html>
